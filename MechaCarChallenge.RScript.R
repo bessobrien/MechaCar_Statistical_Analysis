@@ -22,4 +22,21 @@ total_summary <- sus_coil %>% summarize(Mean=mean(PSI),Median=median(PSI),Varian
 #Create a df that groups each manufacturing lot by measures of central tendancy
 lot_summary <- sus_coil %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI)) # create lot summary with group_by and summarize
 
+# Deliverable 3
+# write a t test comparing manufacturing lot means to standard 1500
+t.test((sus_coil$PSI),mu=1500)
+
+# define the subsets
+# var_1 <- subset(sus_coil$Manufacturing_Lot == "Lot 1")
+# var_2 <- sus_coil$Manufacturing_Lot[sus_coil$Manufacturing_Lot == "Lot 2"]
+# var_3 <- sus_coil$Manufacturing_Lot[sus_coil$Manufacturing_Lot == "Lot 3"]
+
+#t test for lot 1
+t.test(subset(sus_coil, Manufacturing_Lot == "Lot 1")$PSI,mu=1500)
+
+# t test for lot 2
+# t test for lot 3
+
+
+
 

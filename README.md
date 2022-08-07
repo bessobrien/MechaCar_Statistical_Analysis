@@ -39,5 +39,31 @@ Our analysis question:
 
 **A:** After looking at the data, we can see that in total, our variance of the suspension coils did not exceed 100 pounds per square inch. However, after looking at the lots, we can see that Lot 3 had variance that exceeded the design specifications of 100 pounds per square inch. We can conclude that we need to review the design process, and investigate Lot 3 specifically to find factors that may have contributed to this large variance and what we need to do to adjust in future lots.
 
+## T-Tests on Suspension Coils
+
+The third analysis was to do some t-tests to compare against our population mean of 1,500 pounds per square inch and overall and manufacturing lots PSI mean were statistically different.
+
+Overall:
+LINK ![]
+
+Lot 1:
+
+Lot 2:
+ 
+Lot 3:
+
+Overall, we saw that .....
+
+## Study Design: MechaCar vs Competition
+
+Finally, we need to design a statistical study to compare performance of the MechaCar vehicles against performance of vehicles from other manufacturers.
+
+A good metric that we would like to test is fuel efficiency of cars based on vehicle class and transmission type. For both manufacturers, we would look for an alternative hypothesis, indicating that there is a relationship between the variables (an effect). We believe that there is a relationship between fuel economy, and class and transmission type. We would like to compare this relationship between manufacturers.
+
+The statistical study we would like to use for this is a two-way ANOVA (analysis of variation). For this, we must have the assumptions that the dependent variable (mpg) is numerical and continuous, and the independent variables are categorical (class and transmission type). We must also assume that the dependent variable is considered to be normally distributed, and the variance among each group should be very similar.
+
+For this, we need to collect data from each manufacturer: dependent (miles per gallon), and independent (vehicle class, and transmission type).
+
+With this, we can compare performance of the MechaCar vehicles against performance of vehicles from other manufacturers.
 
 
