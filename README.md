@@ -43,16 +43,28 @@ Our analysis question:
 
 The third analysis was to do some t-tests to compare against our population mean of 1,500 pounds per square inch and overall and manufacturing lots PSI mean were statistically different.
 
-Overall:
-LINK ![]
+**Overall:**
+LINK ![all_t.png]()
 
-Lot 1:
+**Lot 1:**
+LINK ![lot_1_t.png]()
 
-Lot 2:
+**Lot 2:**
+LINK ![lot_2_t.png]()
  
-Lot 3:
+**Lot 3:**
+LINK ![lot_3_t.png]()
 
-Overall, we saw that .....
+Overall, we saw that compared to our desired population mean of 1,500, overall results were at 1498.78 - slightly below our population mean. Lot 1 mean was at 1500 - right where it should be. Lot 2 mean was at 1500.2 - slightly above, but close. Lot 3 was 1496.14 - the lowest of all three lots.
+
+The p-values were:
+
+Overall: 0.06028
+Lot 1: 1
+Lot 2: 0.6072
+Lot 3: 0.04168
+
+Based on our assumption of a significance level of 0.05 percent, we can see that everything except Lot 3 were statistically similar.
 
 ## Study Design: MechaCar vs Competition
 
