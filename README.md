@@ -1,13 +1,32 @@
 # MechaCar Analyisis
 ## Summary
 
+This analysis is a special project. AutosRUs’ newest prototype, the MechaCar, is suffering from production troubles that are blocking the manufacturing team’s progress. AutosRUs’ upper management has requested to review the production data for insights that may help the manufacturing team.
 
-# Analysis
+In this challenge and analysis, I will utilize R and RStudio to:
+
+1. Perform multiple linear regression analysis to identify which variables in the dataset predict the mpg of MechaCar prototypes
+2. Collect summary statistics on the pounds per square inch (PSI) of the suspension coils from the manufacturing lots
+3. Run t-tests to determine if the manufacturing lots are statistically different from the mean population
+4. Design a statistical study to compare vehicle performance of the MechaCar vehicles against vehicles from other manufacturers
+
+## Resources
+RStudio 2022.01.1
+
+VSCode 1.69.2
+
+## Analysis
 ## Linear Regression to Predict MPG
 
 In this first analysis, we used a multiple linear regression model. We are able to obtain and analyze a greater amount of data using a multiple regession model vs a single linear regression model. 
 
-We created the linear regession summary: LINK ![1_summary_output]()
+First, we wrote a script to perform the linear regression:
+
+![1_lm_output](https://github.com/bessobrien/MechaCar_Statistical_Analysis/blob/main/Resources/1_lm_output.png)
+
+We created the linear regession summary: 
+
+![1_summary_output](https://github.com/bessobrien/MechaCar_Statistical_Analysis/blob/main/Resources/1_lmsummary_output.png)
 
 Going through this analysis, we asked ourselves these questions:
 
@@ -28,10 +47,12 @@ Going through this analysis, we asked ourselves these questions:
 The second analysis was taking the results from mltiple production lots. The weight capacities of multiple suspension coils were tested to determine if the manufacturing process is consistent across production lots.
 
 We first used the summarize() function in R to create a table of total summary:
-![2_table_summary]LINK
+
+![2_table_summary](https://github.com/bessobrien/MechaCar_Statistical_Analysis/blob/main/Resources/2_table_summary.png)
 
 We then used group_by() and summarize() to calculated the same measures of central tendency, but grouped by manufacturing lot size:
-![2_lot_summary]LINK
+
+![2_lot_summary](https://github.com/bessobrien/MechaCar_Statistical_Analysis/blob/main/Resources/2_lot_summary.png)
 
 Our analysis question:
 
@@ -44,24 +65,31 @@ Our analysis question:
 The third analysis was to do some t-tests to compare against our population mean of 1,500 pounds per square inch and overall and manufacturing lots PSI mean were statistically different.
 
 **Overall:**
-LINK ![all_t.png]()
+
+![all_t.png](https://github.com/bessobrien/MechaCar_Statistical_Analysis/blob/main/Resources/all_t.png)
 
 **Lot 1:**
-LINK ![lot_1_t.png]()
+
+![lot_1_t.png](https://github.com/bessobrien/MechaCar_Statistical_Analysis/blob/main/Resources/lot_1_t.png)
 
 **Lot 2:**
-LINK ![lot_2_t.png]()
+
+![lot_2_t.png](https://github.com/bessobrien/MechaCar_Statistical_Analysis/blob/main/Resources/lot_2_t.png)
  
 **Lot 3:**
-LINK ![lot_3_t.png]()
+
+![lot_3_t.png](https://github.com/bessobrien/MechaCar_Statistical_Analysis/blob/main/Resources/lot_3_t.png)
 
 Overall, we saw that compared to our desired population mean of 1,500, overall results were at 1498.78 - slightly below our population mean. Lot 1 mean was at 1500 - right where it should be. Lot 2 mean was at 1500.2 - slightly above, but close. Lot 3 was 1496.14 - the lowest of all three lots.
 
 The p-values were:
 
 Overall: 0.06028
+
 Lot 1: 1
+
 Lot 2: 0.6072
+
 Lot 3: 0.04168
 
 Based on our assumption of a significance level of 0.05 percent, we can see that everything except Lot 3 were statistically similar.
